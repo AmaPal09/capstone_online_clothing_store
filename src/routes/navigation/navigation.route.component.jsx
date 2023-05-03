@@ -1,4 +1,4 @@
-navigation.route.component.jsx
+/*navigation.route.component.jsx*/
 
 import {Outlet} from 'react-router-dom';
 

@@ -2,8 +2,9 @@
 // import CategoryItem from'./components/category-item/category-item.component.jsx';
 
 import { Routes, Route} from 'react-router-dom';
-import Home from './routes/home/home.route.component.jsx';
 
+import Home from './routes/home/home.route.component.jsx';
+import Navigation from './routes/navigation/navigation.route.component.jsx';
 
 
 const Shop = () => {
