@@ -13,8 +13,9 @@ const Shop = () => {
 const App =() =>  {
     return(
         <Routes>
-            <Route path='/home' element={ <Home/>}/>
-            <Route path='/shop' element={ <Shop/>}/>
+            <Route path='/home' element={ <Home/>}>
+                <Route path='shop' element={ <Shop/>}/>
+            </Route>
         </Routes>
     );
 };
