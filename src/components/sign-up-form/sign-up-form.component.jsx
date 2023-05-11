@@ -17,6 +17,10 @@ const SignUpForm = () => {
 	const { displayName, email, password, comfirmPassword} = formFields;
 
 
+	const resetFormFields = () => {
+		setFormFields(defaultFormFields);
+	}
+
 	const handleSubmit = async( event ) => {
 		event.preventDefault();
 
@@ -28,10 +32,17 @@ const SignUpForm = () => {
 		try {
 			const { user } = await createAuthUserWithEmailAndPassword(email, password);
 
-			await createUserDocumentFromAuth(user, {displayName});
+			await createUserDocumentFromAuth(user, { displayName });
+			resetFormFields();
+
 
 		} catch(error) {
-			console.log("user creation encountered an error", error);
+			if (error.code === 'auth/email-already-in-use') {
+				alert("Email already exists. New user not created");
+			}
+			else {
+				console.log("user creation encountered an error", error);
+			}
 		}
 	}
 
