@@ -1,4 +1,4 @@
-/*  sign-in.route.component.jsx */
+/*  authentication.route.component.jsx */
 
 
 import {
@@ -8,7 +8,7 @@ import {
 
 import SignUpForm from '../../components/sign-up-form/sign-up-form.component.jsx';
 
-const SignIn = () => {
+const Auth = () => {
 
 	const logGoogleUser = async() => {
 		const response = await signInWithGooglePopup();
@@ -26,4 +26,4 @@ const SignIn = () => {
 	);
 };
 
-export default SignIn
+export default Auth
