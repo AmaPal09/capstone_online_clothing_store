@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils.js';
 
 import FormInput from '../form-input/form-input.component.jsx';
+import Button from '../button/button.component.jsx';
 
 import './sign-up-form.styles.scss';
 
@@ -76,7 +77,7 @@ const SignUpForm = () => {
 					label = "Confirm Password"
 					type = "password" required onChange = {handleChange} name = "comfirmPassword" value = {comfirmPassword}/>
 
-				<button type = "submit">Sign Up</button>
+				<Button type = "submit">Sign Up</Button>
 			</form>
 		</div>
 	);
