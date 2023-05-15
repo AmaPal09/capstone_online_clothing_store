@@ -6,12 +6,8 @@ import { Routes, Route} from 'react-router-dom';
 import Home from './routes/home/home.route.component.jsx';
 import Navigation from './routes/navigation/navigation.route.component.jsx';
 import Auth from './routes/authentication/authentication.route.component.jsx';
+import Shop from './routes/shop/shop.route.component.jsx';
 
-const Shop = () => {
-    return (
-        <h1>This is the shop page</h1>
-    );
-};
 
 const App =() =>  {
     return(
