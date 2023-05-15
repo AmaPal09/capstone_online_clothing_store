@@ -1,10 +1,11 @@
 /* sign-up-form.component.jsx */
 
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils.js';
 
 import FormInput from '../form-input/form-input.component.jsx';
 import Button from '../button/button.component.jsx';
+import { UserContext } from '../../contexts/user.context.jsx';
 
 import './sign-up-form.styles.scss';
 
@@ -18,9 +19,9 @@ const defaultFormFields = {
 const SignUpForm = () => {
 
 	const [formFields, setFormFields] = useState(defaultFormFields);
-
 	const { displayName, email, password, comfirmPassword} = formFields;
 
+	const { setCurrentUser } = useContext(UserContext);
 
 	const resetFormFields = () => {
 		setFormFields(defaultFormFields);
@@ -33,9 +34,12 @@ const SignUpForm = () => {
 			alert("Passwords do not match");
 			return;
 		}
+		//error Firebase: Password should be at least 6 characters (auth/weak-password).
 
 		try {
 			const { user } = await createAuthUserWithEmailAndPassword(email, password);
+
+			setCurrentUser(user);
 
 			await createUserDocumentFromAuth(user, { displayName });
 			resetFormFields();
