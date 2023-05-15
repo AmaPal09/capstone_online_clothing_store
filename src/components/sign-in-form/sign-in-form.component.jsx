@@ -34,6 +34,7 @@ const SignInForm = () => {
 
 	const signInWithGoogle = async() => {
 		const response = await signInWithGooglePopup();
+		// setCurrentUser(response.user);
 		await createUserDocumentFromAuth(response.user)
 	};
 
@@ -42,7 +43,7 @@ const SignInForm = () => {
 
 		try {
 			const response = await signInAuthUserWithEmaiAndPassword(email, password);
-			setCurrentUser(response.user);
+			// setCurrentUser(response.user);
 			resetFormFields();
 
 
