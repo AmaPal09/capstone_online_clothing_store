@@ -1,12 +1,19 @@
 // shop.route.component.jsx
-import SHOP_DATA from '../../shop-data.json';
+import { useContext } from 'react';
+
+import { ProductsContext } from '../../contexts/products.context.jsx';
+
+
 
 const Shop = () => {
+
+	const { products } = useContext(ProductsContext);
+
 	return (
 		<div>
-			{SHOP_DATA.map(({id, name}) => (
-				<div key={id}>
-					<h1>{name}</h1>
+			{ products.map((product) => (
+				<div key={product.id}>
+					<h1>{product.name}</h1>
 				</div>
 				)
 			)}
