@@ -1,6 +1,9 @@
 /* sign-up-form.component.jsx */
 
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+
+import { UserContext } from '../../contexts/user.context.jsx';
+
 import {
 	createAuthUserWithEmailAndPassword,
 	createUserDocumentFromAuth,
@@ -25,6 +28,7 @@ const SignInForm = () => {
 
 	const { email, password } = formFields;
 
+	const { setCurrentUser } = useContext(UserContext);
 
 	const resetFormFields = () => {
 		setFormFields(defaultFormFields);
@@ -41,7 +45,9 @@ const SignInForm = () => {
 		try {
 
 			const response = await signInAuthUserWithEmaiAndPassword(email, password);
-			console.log(response)
+			// console.log(response)
+			setCurrentUser(response.user);
+
 			resetFormFields();
 
 
