@@ -1,8 +1,11 @@
 // shop.route.component.jsx
 import { useContext } from 'react';
 
+import ProductCard from '../../components/product-card/product-card.component.jsx';
+
 import { ProductsContext } from '../../contexts/products.context.jsx';
 
+import './shop.route.styles.scss';
 
 
 const Shop = () => {
@@ -10,11 +13,9 @@ const Shop = () => {
 	const { products } = useContext(ProductsContext);
 
 	return (
-		<div>
+		<div className="products-container">
 			{ products.map((product) => (
-				<div key={product.id}>
-					<h1>{product.name}</h1>
-				</div>
+				<ProductCard key={product.id} product={product}></ProductCard>
 				)
 			)}
 		</div>
