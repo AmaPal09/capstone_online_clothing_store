@@ -1,6 +1,6 @@
 import { ReactComponent as ShoppingBag} from '../../assets/shopping-bag.svg'; 
 
-import Button from '../button/button.component'; 
+import Button from '../button/button.component';
 
 import './cart-icon.styles.scss'; 
 
