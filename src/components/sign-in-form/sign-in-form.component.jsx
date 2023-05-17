@@ -3,7 +3,6 @@
 import { useState, } from 'react';
 
 import {
-	createAuthUserWithEmailAndPassword,
 	signInWithGooglePopup,
 	signInAuthUserWithEmaiAndPassword,
 } from '../../utils/firebase/firebase.utils.js';
@@ -36,10 +35,8 @@ const SignInForm = () => {
 		event.preventDefault();
 
 		try {
-			const response = await signInAuthUserWithEmaiAndPassword(email, password);
+			await signInAuthUserWithEmaiAndPassword(email, password);
 			resetFormFields();
-
-
 		} catch(error) {
 			switch(error.code) {
 				case "auth/wrong-password":
