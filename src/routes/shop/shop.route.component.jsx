@@ -1,5 +1,5 @@
 // shop.route.component.jsx
-import { useContext,Fragment } from 'react';
+import { useContext } from 'react';
 
 // import ProductCard from '../../components/product-card/product-card.component.jsx';
 import CategoryPreview from '../../components/category-preview/category-preview.component.jsx';
