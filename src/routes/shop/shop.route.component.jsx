@@ -1,4 +1,5 @@
 //shop.route.component.jsx
+
 import { Routes, Route } from 'react-router-dom';
 
 import CategoriesPreview from '../categories-preview/categories-preview.route.component.jsx';
