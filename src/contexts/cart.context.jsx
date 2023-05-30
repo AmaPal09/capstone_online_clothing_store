@@ -1,4 +1,11 @@
-import { createContext, useState, useEffect } from "react";
+//cart.context.jsx
+
+import { 
+    createContext, 
+    useState, 
+    useEffect 
+} from "react";
+
 
 export const addCartItem = (cartItems, productToAdd) => {
     const existingCartItem = cartItems.find(
@@ -15,6 +22,7 @@ export const addCartItem = (cartItems, productToAdd) => {
     
     return [...cartItems, { ...productToAdd, quantity: 1 }];
 };
+
 
 // removeCartItem
 const removeCartItem = (cartItems, cartItemToRemove) => {

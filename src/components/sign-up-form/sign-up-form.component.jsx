@@ -1,7 +1,10 @@
 /* sign-up-form.component.jsx */
 
 import { useState, } from 'react';
-import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils.js';
+import { 
+    createAuthUserWithEmailAndPassword, 
+    createUserDocumentFromAuth 
+} from '../../utils/firebase/firebase.utils.js';
 
 import FormInput from '../form-input/form-input.component.jsx';
 import Button from '../button/button.component.jsx';

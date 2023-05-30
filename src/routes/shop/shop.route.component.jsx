@@ -7,6 +7,7 @@ import Category from '../category/category.route.component';
 
 import './shop.route.styles.scss';
 
+
 const Shop = () => {
   return (
     <Routes>

@@ -1,5 +1,7 @@
 /* directory.component.jsx */
+
 import './directory.styles.scss'
+
 import CategoryItem from'../category-item/category-item.component.jsx';
 
 const Directory = ({categories}) => {
@@ -15,6 +17,6 @@ const Directory = ({categories}) => {
 
         </div>
 	);
-}
+}; 
 
 export default Directory;

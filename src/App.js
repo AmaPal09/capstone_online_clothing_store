@@ -1,3 +1,5 @@
+//App.js
+
 // import './categories.styles.scss';
 // import CategoryItem from'./components/category-item/category-item.component.jsx';
 

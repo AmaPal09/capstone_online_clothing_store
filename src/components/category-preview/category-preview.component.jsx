@@ -1,3 +1,5 @@
+//category-preview.component.jsx
+
 import ProductCard from "../product-card/product-card.component";
 
 import "./category-preview.styles.scss"; 
@@ -19,6 +21,6 @@ const CategoryPreview = ({title, products}) => {
             </div>
         </div>
     )
-}
+};
 
 export default CategoryPreview; 

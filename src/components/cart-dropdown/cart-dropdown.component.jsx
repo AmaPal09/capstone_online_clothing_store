@@ -1,7 +1,6 @@
-//cart-dropdown.component.jsx
+//cart-dropdown.componemt
 
 import { useContext } from 'react'; 
-
 import { useNavigate } from 'react-router-dom';
 
 import { CartContext } from '../../contexts/cart.context'

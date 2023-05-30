@@ -1,6 +1,10 @@
 /*navigation.route.component.jsx*/
 
-import { Fragment, useContext } from 'react';
+import { 
+    Fragment, 
+    useContext 
+} from 'react';
+
 import { Outlet, Link} from 'react-router-dom';
 
 import CartIcon from '../../components/cart-icon/cart-icon.component';
@@ -13,6 +17,7 @@ import { CartContext } from '../../contexts/cart.context';
 import { signOutUser } from "../../utils/firebase/firebase.utils.js";
 
 import './navigation.route.styles.scss';
+
 
 const Navigation = () => {
     const { currentUser } = useContext(UserContext);

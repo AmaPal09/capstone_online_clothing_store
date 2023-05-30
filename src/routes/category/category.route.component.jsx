@@ -1,6 +1,12 @@
 //category.route.component.jsx
 
-import { useContext, useState, useEffect } from "react";
+
+import { 
+    useContext, 
+    useState, 
+    useEffect 
+} from "react";
+
 import { useParams } from "react-router-dom"; 
 
 import { CategoriesContext } from "../../contexts/categories.context"
@@ -8,6 +14,7 @@ import { CategoriesContext } from "../../contexts/categories.context"
 import ProductCard from "../../components/product-card/product-card.component";
 
 import "./category.route.styles.scss"; 
+
 
 const Category = () => {
     const { category } = useParams();  
@@ -28,6 +35,6 @@ const Category = () => {
             }
         </div>
     ); 
-}
+}; 
 
 export default Category; 
