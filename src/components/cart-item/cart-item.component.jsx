@@ -1,3 +1,5 @@
+//cart-item.component.jsx
+
 import './cart-item.styles.scss'; 
 
 const CartItem = ({ cartItem }) => {
