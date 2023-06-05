@@ -2,7 +2,7 @@
 
 import { useContext } from 'react';
 
-import { ReactComponent as ShoppingBag} from '../../assets/shopping-bag.svg'; 
+// import { ReactComponent as ShoppingBag} from '../../assets/shopping-bag.svg'; 
 
 import { CartContext } from '../../contexts/cart.context';
 
