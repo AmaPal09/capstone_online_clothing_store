@@ -1,4 +1,4 @@
-// checkout-item.styles.scss 
+// checkout-item.styles.jsx
 
 import styled from 'styled-components'; 
 

@@ -1,4 +1,4 @@
-// sign-in-form.styles.scss
+// sign-in-form.styles.jsx
 
 import styled from 'styled-components'; 
 

@@ -1,4 +1,4 @@
-//category-preview.styles.scss
+//category-preview.styles.jsx
 
 import styled from 'styled-components'; 
 

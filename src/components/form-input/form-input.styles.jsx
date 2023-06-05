@@ -1,4 +1,4 @@
-// form-input.styles.scss
+// form-input.styles.jsx
 
 import styled, { css } from 'styled-components'; 
 

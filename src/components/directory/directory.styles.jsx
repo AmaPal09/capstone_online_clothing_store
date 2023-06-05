@@ -1,4 +1,4 @@
-// directory.styles.scss
+// directory.styles.jsx
 
 import styled from 'styled-components'; 
 
