@@ -2,6 +2,7 @@
 
 import styled, { css } from 'styled-components'; 
 
+
 const subColor = 'grey'; 
 const mainColor = 'black'; 
 
@@ -10,6 +11,7 @@ const shrinkLabelStyles = css`
     font-size: 12px;
     color: ${mainColor};
 `;    
+
 
 export const FormInputLabel = styled.label`
     color: ${subColor};
