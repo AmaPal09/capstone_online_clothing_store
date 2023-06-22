@@ -13,12 +13,14 @@ import {
     SignUpContainer, 
 } from './sign-up-form.styles';
 
+
 const defaultFormFields = {
 	displayName: '',
 	email: '',
 	password: '',
 	comfirmPassword: '',
 };
+
 
 const SignUpForm = () => {
 
@@ -36,7 +38,6 @@ const SignUpForm = () => {
 			alert("Passwords do not match");
 			return;
 		}
-		//error Firebase: Password should be at least 6 characters (auth/weak-password).
 
 		try {
 			const { user } = await createAuthUserWithEmailAndPassword(email, password);
