@@ -2,8 +2,6 @@
 
 import { useContext } from 'react';
 
-// import { ReactComponent as ShoppingBag} from '../../assets/shopping-bag.svg'; 
-
 import { CartContext } from '../../contexts/cart.context';
 
 import {
@@ -11,6 +9,7 @@ import {
     ItemCount, 
     ShoppingIcon, 
 } from './cart-icon.styles'; 
+
 
 const CartIcon = () => {
     const {isCartOpen, setIsCartOpen, cartCount} = useContext(CartContext); 
