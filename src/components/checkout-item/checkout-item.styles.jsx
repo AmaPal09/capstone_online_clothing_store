@@ -2,6 +2,7 @@
 
 import styled from 'styled-components'; 
 
+
 export const RemoveButton = styled.div`
     padding-left: 12px; 
     cursor: pointer; 
