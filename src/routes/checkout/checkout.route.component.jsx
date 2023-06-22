@@ -12,6 +12,7 @@ import {
     TitleSpan,
 } from './checkout.route.styles'; 
 
+
 const Checkout = () => {
     const {cartItems, cartTotal } = useContext(CartContext); 
 
