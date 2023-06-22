@@ -14,6 +14,7 @@ import {
     CartItems
 } from './cart-dropdown.styles'; 
 
+
 const CartDropdown = () => {
     const { cartItems } = useContext(CartContext);
     const navigate = useNavigate(); 
