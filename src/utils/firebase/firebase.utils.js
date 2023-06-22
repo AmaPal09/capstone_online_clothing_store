@@ -12,7 +12,6 @@ import {
 	signOut,
 	onAuthStateChanged,
 } from "firebase/auth";
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 import { 
     getFirestore, 
@@ -25,7 +24,7 @@ import {
     getDocs, 
 } from "firebase/firestore"; 
 
-// Your web app's Firebase configuration
+// Web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDOuUmhUDJABVfRoVOEkuOCScE3pEyVtdc",
   authDomain: "crown-clothing-capstone-db.firebaseapp.com",
