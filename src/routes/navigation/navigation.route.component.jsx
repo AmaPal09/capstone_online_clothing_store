@@ -40,8 +40,13 @@ const Navigation = () => {
                 	</NavLinkContainer>
                     {
                         currentUser ?
-                            (<NavLinkContainer as='span' onClick={signOutUser}>SIGN OUT</NavLinkContainer>)
-                            : (<NavLinkContainer to='/auth'>
+                            (<NavLinkContainer 
+                                as='span' 
+                                onClick={signOutUser}>
+                                    SIGN OUT
+                            </NavLinkContainer>)
+                            : (<NavLinkContainer 
+                                to='/auth'>
                                 SIGN IN
                             </NavLinkContainer>)
                     }
