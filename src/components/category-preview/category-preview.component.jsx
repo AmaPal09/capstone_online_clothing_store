@@ -9,6 +9,7 @@ import {
 } from './category-preview.styles'; 
 
 
+//Category Preview component 
 const CategoryPreview = ({title, products}) => {
     return (
         <CategoryPreviewContainer>
