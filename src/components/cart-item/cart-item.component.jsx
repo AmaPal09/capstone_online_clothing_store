@@ -3,6 +3,7 @@
 import {CartItemContainer, ItemDetails} from './cart-item.styles.jsx'; 
 
 
+//CartItem component
 const CartItem = ({ cartItem }) => {
     const { imageUrl, price, name, quantity } = cartItem;
 
