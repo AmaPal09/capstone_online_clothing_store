@@ -11,6 +11,7 @@ import {
 } from './cart-icon.styles'; 
 
 
+//CartIcon component
 const CartIcon = () => {
     const {isCartOpen, setIsCartOpen, cartCount} = useContext(CartContext); 
 
