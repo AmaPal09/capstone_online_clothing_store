@@ -15,6 +15,7 @@ import {
 } from './checkout-item.styles'; 
 
 
+//Checkout item component
 const CheckoutItem = ({cartItem}) => {
     const {name, imageUrl, quantity, price} = cartItem
 
