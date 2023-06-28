@@ -6,6 +6,7 @@ import CategoriesPreview from '../categories-preview/categories-preview.route.co
 import Category from '../category/category.route.component';
 
 
+//Shop route component
 const Shop = () => {
   return (
     <Routes>
