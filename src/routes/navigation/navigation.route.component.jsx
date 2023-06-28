@@ -24,6 +24,7 @@ import {
 } from './navigation.route.styles.jsx';
 
 
+//Navigation route component
 const Navigation = () => {
     const { currentUser } = useContext(UserContext);
     const { isCartOpen } = useContext(CartContext); 
