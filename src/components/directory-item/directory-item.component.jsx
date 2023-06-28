@@ -9,6 +9,7 @@ import {
 } from './directory-item.styles'
 
 
+//Directory item component
 const DirectoryItem = ({category}) => {
 	const {imageUrl, title, route} = category;
     const navigate = useNavigate(); 
