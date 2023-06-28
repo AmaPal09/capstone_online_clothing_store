@@ -41,7 +41,7 @@ const categories = [
 ];
 
 
-
+//Directory Component
 const Directory = () => {
 	return(
 		<DirectoryContainer>
