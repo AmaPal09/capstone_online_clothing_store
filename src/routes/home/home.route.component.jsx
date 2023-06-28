@@ -4,7 +4,7 @@ import {Outlet} from 'react-router-dom';
 
 import Directory from '../../components/directory/directory.component.jsx';
 
-
+//Home/index route component
 const Home =() =>  {
     return(
     	<div>
