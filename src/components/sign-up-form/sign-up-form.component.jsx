@@ -22,6 +22,7 @@ const defaultFormFields = {
 };
 
 
+//Sign up form directory
 const SignUpForm = () => {
 
 	const [formFields, setFormFields] = useState(defaultFormFields);
