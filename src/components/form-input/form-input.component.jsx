@@ -7,6 +7,7 @@ import {
 } from './form-input.styles.jsx';
 
 
+//Form input component
 const FormInput = ( { label, ...otherProps} ) => {
 	return (
 		<Group>
