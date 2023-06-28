@@ -9,11 +9,13 @@ import {
 import { getCategoriesAndDocuments } from '../utils/firebase/firebase.utils'
 
 
+//Categories context declaration
 export const CategoriesContext = createContext({
 	categoriesMap: {},
 });
 
 
+//Categories context values provided for children
 export const CategoriesProvider = ({ children }) => {
 	const [categoriesMap, setCategoriesMap] = useState({});
 
