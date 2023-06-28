@@ -7,6 +7,7 @@ import {
 } from "react";
 
 
+//Add a product to cart
 export const addCartItem = (cartItems, productToAdd) => {
     const existingCartItem = cartItems.find(
         (cartItem) => cartItem.id === productToAdd.id
@@ -54,6 +55,7 @@ const clearCartItem = (cartItems, cartItemToClear) =>
     cartItems.filter((cartItem) => cartItem.id !== cartItemToClear.id);
 
 
+//Context declaration
 export const CartContext = createContext({
     isCartOpen: false,
     setIsCartOpen: () => {},  
@@ -65,6 +67,7 @@ export const CartContext = createContext({
     cartTotal: 0, 
 });
 
+//Context values provided for children
 export const CartProvider = ({children}) => {
     const [isCartOpen, setIsCartOpen] = useState(false);
     const [cartItems, setCartItems] = useState([]);
