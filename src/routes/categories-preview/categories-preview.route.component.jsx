@@ -9,6 +9,7 @@ import { CategoriesContext } from '../../contexts/categories.context';
 import CategoryPreview from '../../components/category-preview/category-preview.component';
 
 
+//Categories preview route component
 const CategoriesPreview = () => {
   const { categoriesMap } = useContext(CategoriesContext);
 
