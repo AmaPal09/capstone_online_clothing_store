@@ -13,6 +13,7 @@ import {
 } from './checkout.route.styles'; 
 
 
+//Checout route component
 const Checkout = () => {
     const {cartItems, cartTotal } = useContext(CartContext); 
 
