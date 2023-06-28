@@ -1,6 +1,5 @@
 //category.route.component.jsx
 
-
 import { 
     useContext, 
     useState, 
@@ -20,6 +19,7 @@ import {
 } from "./category.route.styles"; 
 
 
+//Category route component
 const Category = () => {
     const { category } = useParams();  
     const { categoriesMap } = useContext( CategoriesContext ); 
