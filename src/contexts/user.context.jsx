@@ -3,7 +3,8 @@
 import { 
     createContext, 
     useState, 
-    useEffect
+    useEffect, 
+    useReducer, 
 } from 'react';
 
 import { 
@@ -19,9 +20,17 @@ export const UserContext = createContext({
 });
 
 
+//Reducer function for user context 
+const userReducer = (state, action) => {
+    const {type, payload} = action; 
+
+    
+    return 
+} 
+
 //User context values provider for children
 export const UserProvider = ({ children }) => {
-	const [currentUser, setCurrentUser] = useState(null);
+	// const [currentUser, setCurrentUser] = useState(null);
 	const value = { currentUser, setCurrentUser };
 
 	useEffect(() => {
