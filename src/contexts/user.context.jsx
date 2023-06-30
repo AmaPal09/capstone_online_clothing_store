@@ -2,7 +2,7 @@
 
 import { 
     createContext, 
-    useState, 
+    // useState, 
     useEffect, 
     useReducer, 
 } from 'react';
@@ -25,8 +25,8 @@ export const USER_ACTION_TYPES = {
 
 //Reducer function for user context 
 const userReducer = (state, action) => {
-    console.log('dispatch'); 
-    console.log(action); 
+    // console.log('dispatch'); 
+    // console.log(action); 
     const {type, payload} = action; 
 
     switch(type) {
@@ -51,7 +51,7 @@ export const UserProvider = ({ children }) => {
     const [state, dispatch] = useReducer(userReducer, INITIAL_STATE) 
     
     const {currentUser} = state; 
-    console.log(currentUser);
+    // console.log(currentUser);
     const setCurrentUser = (user) => {
         dispatch({
             type: USER_ACTION_TYPES.SET_CURRENT_USER, 
