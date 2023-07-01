@@ -3,7 +3,8 @@
 import { 
     createContext, 
     useState, 
-    useEffect 
+    useEffect, 
+    useReducer,  
 } from "react";
 
 
@@ -66,6 +67,23 @@ export const CartContext = createContext({
     cartCount: 0, 
     cartTotal: 0, 
 });
+
+const INITIAL_CART_STATE = {
+    isCartOpen: false,
+    cartItems: [],
+    cartCount: 0, 
+    cartTotal: 0, 
+}
+
+const cartReducer = (state, action) => {
+    const {type, payload} = action; 
+
+    switch(type) {
+        
+        default: 
+            throw new Error(`Unhandled type of ${type} in cartReducer`)
+    }
+}
 
 //Context values provided for children
 export const CartProvider = ({children}) => {
