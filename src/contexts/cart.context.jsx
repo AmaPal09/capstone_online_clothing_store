@@ -100,27 +100,6 @@ const cartReducer = (state, action) => {
 
 //Context values provided for children
 export const CartProvider = ({children}) => {
-    // const [isCartOpen, setIsCartOpen] = useState(false);
-    // const [cartItems, setCartItems] = useState([]);
-    // const [cartCount, setCartCount] = useState(0); 
-    // const [cartTotal, setCartTotal] = useState(0); 
-
-    // useEffect(()=> {
-    //     const newCartCount = cartItems.reduce((total, cartItem)=> {
-    //         return total + cartItem.quantity 
-    //         }, 
-    //     0)
-    //     setCartCount(newCartCount); 
-    // }, [cartItems]); 
-
-    // useEffect(()=> {
-    //     const newCartTotal = cartItems.reduce((total, cartItem)=> {
-    //         return total + cartItem.quantity * cartItem.price
-    //         }, 
-    //     0)
-    //     setCartTotal(newCartTotal); 
-    // }, [cartItems]); 
-
     //Reducer declaration set-up
     const [state, dispatch] = useReducer(cartReducer, INITIAL_CART_STATE); 
 
