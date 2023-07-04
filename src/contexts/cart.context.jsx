@@ -1,9 +1,7 @@
 //cart.context.jsx
 
 import { 
-    createContext, 
-    useState, 
-    useEffect, 
+    createContext,  
     useReducer,  
 } from "react";
 
