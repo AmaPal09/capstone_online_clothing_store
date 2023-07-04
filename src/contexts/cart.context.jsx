@@ -123,17 +123,6 @@ export const CartProvider = ({children}) => {
                     cartCount: newCartCount, 
                     cartTotal: newCartTotal}
         }); 
-
-        /* 
-        generate new cart total 
-
-        generate new cart count 
-        displatch new action with payload = {
-            newCartItems, 
-            newCartCount, 
-            newCartTotal
-        }
-        */
     }   
 
 
