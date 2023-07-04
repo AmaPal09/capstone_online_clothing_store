@@ -118,7 +118,7 @@ export const CartProvider = ({children}) => {
             }, 
         0);
         
-        dispatch({type: 'SET_CART_ITEMS', payload: {
+        dispatch({type: CART_ACTION_TYPE.SET_CART_ITEMS, payload: {
                     cartItems: newCartItems, 
                     cartCount: newCartCount, 
                     cartTotal: newCartTotal}
