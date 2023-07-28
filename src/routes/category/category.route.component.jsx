@@ -20,6 +20,7 @@ import {
 
 //Category route component
 const Category = () => {
+    
     const { category } = useParams();  
     const categoriesMap = useSelector(selectCategoriesMap); 
 
