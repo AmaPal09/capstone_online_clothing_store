@@ -18,8 +18,8 @@ import Checkout from './routes/checkout/checkout.route.component.jsx';
 import { setCurrentUser } from './store/user/user.action';
 
 const App =() =>  {
+    
     const dispatch = useDispatch(); 
-
     useEffect(() => {
 		const unsubscribe = onAuthStateChangedListener((user)=> {
 			if(user) {
@@ -27,7 +27,6 @@ const App =() =>  {
 			}
 			dispatch(setCurrentUser(user));
 		}); 
- 
 		return unsubscribe;
 	}, []);
 
