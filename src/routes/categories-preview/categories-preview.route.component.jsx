@@ -1,18 +1,21 @@
 //categories-preview.route.component.jsx
 
 import { 
-    useContext, 
+    
     Fragment 
 } from 'react';
+import { useSelector } from 'react-redux'; 
 
-import { CategoriesContext } from '../../contexts/categories.context';
+import { selectCategoriesMap } from '../../store/categories/category.selector';
+
+// import { CategoriesContext } from '../../contexts/categories.context';
 import CategoryPreview from '../../components/category-preview/category-preview.component';
 
 
 //Categories preview route component
 const CategoriesPreview = () => {
-  const { categoriesMap } = useContext(CategoriesContext);
-
+//   const { catego riesMap } = useContext(CategoriesContext);
+    const categoriesMap = useSelector(selectCategoriesMap); 
   return (
     <Fragment>
       {Object.keys(categoriesMap).map((title) => {
