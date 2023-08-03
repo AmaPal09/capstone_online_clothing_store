@@ -22,7 +22,7 @@ import {
     writeBatch, 
     query, 
     getDocs,
-    DocumentSnapshot, 
+    // DocumentSnapshot, 
 } from "firebase/firestore"; 
 
 // Web app's Firebase configuration
