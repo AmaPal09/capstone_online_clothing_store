@@ -17,8 +17,6 @@ import {ReactComponent as CrownLogo} from '../../assets/crown.svg';
 import { selectIsCartOpen  } from '../../store/cart/cart.selector'
 import { selectCurrentUser } from '../../store/user/user.selector';
 
-// import { signOutUser } from "../../utils/firebase/firebase.utils.js";
-
 import {
     NavigationContainer, 
     LogoContainer, 
@@ -31,7 +29,6 @@ import {
 const Navigation = () => {
     
     const dispatch = useDispatch(); 
-    // const sendSignOut = () => dispatch(signOut()); 
     const signOutUser = () => dispatch(signOutStart()); 
 
     const currentUser = useSelector(selectCurrentUser); 
@@ -53,7 +50,6 @@ const Navigation = () => {
                                 as='span' 
                                 onClick={
                                     signOutUser
-                                    // sendSignOut
                                     }>
                                     SIGN OUT
                             </NavLinkContainer>)
