@@ -102,7 +102,8 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
 		}
 	}
 
-	return userDocRef;
+	// return userDocRef;
+    return userSnapShot;
 };
 
 
