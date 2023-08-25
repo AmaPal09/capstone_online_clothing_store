@@ -41,7 +41,6 @@ const SignInForm = () => {
 	}
 
 	const signInWithGoogle = async() => {
-		// await signInWithGooglePopup();
         dispatch(googleSignInStart()); 
 	};
 
@@ -49,7 +48,6 @@ const SignInForm = () => {
 		event.preventDefault();
 
 		try {
-			// await signInAuthUserWithEmaiAndPassword(email, password);
             dispatch(emailSignInStart(email, password)); 
 			resetFormFields();
 		} catch(error) {

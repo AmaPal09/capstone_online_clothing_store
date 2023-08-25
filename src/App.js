@@ -4,12 +4,6 @@ import { Routes, Route} from 'react-router-dom';
 import {  useEffect } from 'react';
 import { useDispatch } from 'react-redux'; 
 
-// import { 
-//     onAuthStateChangedListener,
-// 	createUserDocumentFromAuth,
-//     getCurrentUser, 
-// } from './utils/firebase/firebase.utils';
-
 import Home from './routes/home/home.route.component.jsx';
 import Navigation from './routes/navigation/navigation.route.component.jsx';
 import Auth from './routes/authentication/authentication.route.component.jsx';
@@ -24,8 +18,6 @@ const App =() =>  {
     
     useEffect(() => {
         dispatch(checkUserSession()); 
-        // getCurrentUser()
-        // .then((user)=> console.log(user)); 
 	}, []);
 
     return(
