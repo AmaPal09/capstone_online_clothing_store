@@ -22,7 +22,6 @@ import {
     writeBatch, 
     query, 
     getDocs,
-    // DocumentSnapshot, 
 } from "firebase/firestore"; 
 
 // Web app's Firebase configuration
@@ -102,7 +101,6 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
 		}
 	}
 
-	// return userDocRef;
     return userSnapShot;
 };
 
