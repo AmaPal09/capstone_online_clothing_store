@@ -3,11 +3,6 @@
 import { useState, } from 'react';
 import { useDispatch } from 'react-redux';
 
-import {
-	signInWithGooglePopup,
-	signInAuthUserWithEmaiAndPassword,
-} from '../../utils/firebase/firebase.utils.js';
-
 import { 
     googleSignInStart, 
     emailSignInStart, 
