@@ -25,3 +25,6 @@ yarn-error.log*
 
 # My temp files 
 testData.txt
+
+#Sensitive 
+.env
