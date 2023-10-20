@@ -28,3 +28,5 @@ testData.txt
 
 #Sensitive 
 .env
+# Local Netlify folder
+.netlify
